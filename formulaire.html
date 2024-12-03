@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Djaouad's service satisfaction test</title>
+</head>
+<body>
+
+    <h1>Djaouad's service satisfaction test</h1>
+    
+    <form action="traitement.html" method="POST">
+        
+       
+        <label for="nom">Votre nom complet :</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+      
+        <label for="email">Votre adresse email :</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="genre">Votre genre :</label>
+        <select id="genre" name="genre" required>
+            <option value="homme">Homme</option>
+            <option value="femme">Femme</option>
+            
+        </select><br><br>
+
+    
+        <label>Langues que vous parlez :</label><br>
+        <input type="checkbox" id="fr" name="langues" value="fr">
+        <label for="fr">Français</label><br>
+        <input type="checkbox" id="en" name="langues" value="en">
+        <label for="en">Anglais</label><br>
+        <input type="checkbox" id="de" name="langues" value="de">
+        <label for="de">Arabe</label><br><br>
+
+        <label>Êtes-vous satisfait de notre service ?</label><br>
+        <input type="radio" id="satisfait" name="satisfaction" value="satisfait" required>
+        <label for="satisfait">Satisfait</label><br>
+        <input type="radio" id="insatisfait" name="satisfaction" value="insatisfait">
+        <label for="insatisfait">Insatisfait</label><br><br>
+
+        <label for="commentaire">Commentaires supplémentaires :</label><br>
+        <textarea id="commentaire" name="commentaire" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Soumettre">
+
+    </form>
+    
+
+</body>
+</html>
