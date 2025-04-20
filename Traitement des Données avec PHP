@@ -1,0 +1,17 @@
+<?php
+// Connexion à la base de données
+$conn = new PDO('mysql:host=localhost;dbname=bookclub', 'root', '');
+
+// Récupération des données
+$titre = $_POST['titre'];
+$auteur = $_POST['auteur'];
+$genre = $_POST['genre'];
+$resume = $_POST['resume'];
+
+// Requête d’insertion
+$sql = "INSERT INTO books (titre, auteur, genre, résumé) VALUES (?, ?, ?, ?)";
+$stmt = $conn->prepare($sql);
+$stmt->execute([$titre, $auteur, $genre, $resume]);
+
+echo "Livre ajouté avec succès.";
+?>
