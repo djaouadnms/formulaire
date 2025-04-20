@@ -1,0 +1,15 @@
+<form action="traitement.php" method="POST">
+    <label for="titre">Titre du livre :</label>
+    <input type="text" id="titre" name="titre" required><br>
+    
+    <label for="auteur">Auteur :</label>
+    <input type="text" id="auteur" name="auteur" required><br>
+    
+    <label for="genre">Genre :</label>
+    <input type="text" id="genre" name="genre"><br>
+    
+    <label for="resume">Résumé :</label><br>
+    <textarea id="resume" name="resume" rows="5"></textarea><br>
+    
+    <button type="submit">Ajouter le livre</button>
+  </form>
